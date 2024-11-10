@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .tag {
-    @apply border md:px-3 px-2 md:py-1 py-0.5 border-[#F44335] rounded-3xl font-semibold text-black text-xs md:text-sm  rounded-xl 
+    @apply border md:px-3 px-2 md:py-1 py-0.5 border-[#F44335] rounded-3xl font-semibold text-black text-xs md:text-sm  rounded-xl dark:text-white 
 }
