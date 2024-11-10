@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark" id="htmlTag">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Creatives For You</title>
   </head>
-  <body class="bg-[#FAFAFA]">
+  <body class="bg-[#FAFAFA] dark:bg-gray-900">
     <!--Nav Section-->
     <nav
       class="flex items-center justify-between md:px-6 px-3 md:py-4 py-2 space-x-6 md:space-x-12 bg-white"
@@ -25,20 +25,22 @@
         >
           Register Interest
         </button>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-6 cursor-pointer mt-2"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
-          />
-        </svg>
+        <button class="switch">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-8 cursor-pointer hover:scale-110 duration-300 transition-all"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+            />
+          </svg>
+        </button>
       </div>
     </nav>
 
@@ -260,8 +262,8 @@
     </section>
 
     <!--Certificate Section-->
-    <div class="relative w-full md:px-5 px-0 gap-8 md:py-20 py-12 md:flex grid justify-center items-center  bg-white md:my-20 my-0">
-      <h1 class="md:text-6xl text-3xl text-center">There are 5 Courses in this <br> Professional Certificate</h1>
+    <div class="relative w-full md:px-4 px-8 gap-8 md:py-20 py-12 md:flex grid justify-center items-center  bg-white md:my-20 my-0">
+      <h1 class="md:text-6xl text-3xl text-center">There are 5 Courses in this <br> Professional Certificate :</h1>
         <ul class="md:flex grid justify-center md:gap-5 gap-6 text-2xl text-[#2D3142]">
           <li class="md:hover:scale-110 duration-300 transition-all hover:scale-90"><a href="#" class="bg-[#00FF84] px-6 py-1.5 rounded-3xl border border-[#232323]">Course  1</a></li>
           <li class="hover:scale-110 duration-300 transition-all"><a href="#" class="px-6 py-1.5 rounded-3xl border border-[#232323] ">Course  2</a></li>
@@ -286,5 +288,73 @@
         </div>
     </div>
    </Section>
+
+   <!--About Section-->
+   <!--About Section-1-->
+   <div class="text-[#20484F] md:flex grid items-center text-2xl justify-around py-16 md:px-12 px-6 bg-white md:gap-12 gap-16 border-b-4 border-[#20484F1A]">
+    <div class="grid gap-2.5">
+      <img src="pictures/image_1.png" alt="" class="md:grid flex">
+      <ul class="grid gap-2.5">
+        <li>Level39</li>
+        <li>One Canada Square,</li>
+        <li>Canary Wharf, </li>
+        <li>London,</li>
+        <li>E14 5AB</li>
+      </ul>
+    </div>
+
+    <!--About Section-2-->
+    <div class=" md:flex grid gap-12">
+      <div class="grid gap-4 md:border-none border-4 py-8 px-12 border-red-600">
+        <h1 class="md:font-normal font-semibold">Home</h1>
+        <ul class="grid gap-2.5">
+          <li>Collaborations</li>
+          <li>Statistics</li>
+          <li>How It Works</li>
+          <li>Testimonials</li>
+        </ul>
+      </div>
+
+      <div class="grid gap-4 md:border-none border-4  py-8 px-12 border-red-600">
+        <h1 class="md:font-normal font-semibold">About Us</h1>
+        <ul class="grid gap-2.5">
+          <li>Who We Are</li>
+          <li>Mission statement </li>
+          <li>Our Vision </li>
+          <li>Team</li>
+        </ul>
+      </div>
+
+      <div class="grid gap-4 md:border-none border-4 py-8 px-12 border-red-600">
+        <h1 class="md:font-normal font-semibold">Upskill</h1>
+        <ul class="grid gap-2.5">
+          <li>Support</li>
+          <li>Project Managment </li>
+          <li>Data Analysts</li>
+          <li>Ux Design</li>
+        </ul>
+      </div>
+
+      <div class="grid gap-4 md:border-none border-4 py-8 px-12 border-red-600">
+        <h1 class="md:font-normal font-semibold">Contact Us:</h1>
+        <ul class="grid gap-2.5">
+          <li>Your message </li>
+          <li>Email </li>
+          <li>Phone number </li>
+          <li>Linkedin </li>
+        </ul>
+      </div>
+    </div>
+   </div>
+
+   <!--Footer Section-->
+   <h3 class="text-center pt-5 text-2xl text-[#20484F] bg-white">Copyright 2022 Creatives For You LTD</h3>
+
+   <script>
+    const htmlTag = document.getElementById("htmlTag");
+    document.getElementById("switch").addEventListener("click", function () {
+      htmlTag.classList.toggle("dark");
+    });
+   </script>
   </body>
 </html>
